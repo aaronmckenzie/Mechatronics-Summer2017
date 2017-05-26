@@ -5,18 +5,11 @@ int sensorValue = 0;  // variable to store the value coming from the sensor
 void setup() {
   // declare the ledPin as an OUTPUT:
   pinMode(ledPin, OUTPUT);
-  Serial.begin(9600);
 }
 
 void loop() {
- 
-  int sensorValue = analogRead(A0);  //read the input on analog pin 0
-  
-  Serial.println(sensorValue); // print out the value you read
-  
-  delay(75); // delay in between reads
-  sensorValue = analogRead(sensorPin); //read the value from the sensor
-  
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
   // turn the ledPin on
   digitalWrite(ledPin, HIGH);
   // stop the program for <sensorValue> milliseconds:
