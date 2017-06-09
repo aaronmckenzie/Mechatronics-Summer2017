@@ -1,1 +1,9 @@
-First Content
+Inspired by the labor I am putting into the redesign and construction of my backyard,  
+I intend to create a arduino controlled irrigation system.
+ 
+Uninterested in embedding irrigation into the ground, and unwilling to spend every morning watering the plants, I am seeking to develop an arduino-controlled third way of keeping my yard healthy.
+ 
+This device will consist of a 5+ gallon cistern with a digitally controlled valve, water flow meter and solar power cell.
+ 
+Using the power from the solar array, the arduino will control the valve to open and release water.
+Using the flow meter, once a certain volume of water is released, the valve will shut and await the next days’ watering.
