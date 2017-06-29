@@ -1,0 +1,8 @@
+Cistern-fed watering system.
+Water is brought from a 5-gallon cistern into a solenoid valve, which uses the pressure of the water to activate.
+In addition to the water pressure required for activation, the solenoid uses a 12 volt power supply to activate the valve.
+The solenoid is triggered by a real time clock which is connected to the Arduino and is run using correct code and two Libraries which are downloaded into the Arduion #RTC and #Wire.
+When a fixed variable, representing the time to open the valve == the current time, the solenoid valve is activated and water begins to flow through the system.
+Upon water flowing through the system, it passes through a flow meter which is able to measure the amount of water flowing through the system and given the proper formula, measure the total amount of water that has flowed through.
+Another fixed variable is set and when that variable == the amount of water that has flowed through the system, the valve is shut, the measuered variable within the flow meter loop is re-set to 0.
+Once the valve is shut, the system waits until, once again, the Time fixed variable == the current time and the system loops once again
